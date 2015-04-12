@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"weather101/modules/database"
+	"monthlyCoder/modules/database"
 )
 
 var (

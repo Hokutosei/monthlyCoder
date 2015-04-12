@@ -2,23 +2,25 @@ package database
 
 import (
 	"fmt"
-	mgo "gopkg.in/mgo.v2"
-	_ "gopkg.in/mgo.v2/bson"
 	"log"
 	_ "time"
+
+	mgo "gopkg.in/mgo.v2"
+	_ "gopkg.in/mgo.v2/bson"
 )
 
 var (
 	session *mgo.Session
 )
 
+// StartMongoDb start mongodb connection
 func StartMongoDb() {
-	current_session, err := mgo.Dial("107.167.180.219:27017")
+	currentSession, err := mgo.Dial("104.155.227.195:27020")
 	if err != nil {
 		log.Println("err connecting to mongodb!")
 		log.Println("error: ", err)
 		return
 	}
-	fmt.Println("connected to mongodb!")
-	session = current_session
+	fmt.Println("connected to mongos!")
+	session = currentSession
 }
