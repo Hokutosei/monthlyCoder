@@ -1,10 +1,13 @@
+# monthlyCoder
+personal accountant and recorder for monthly activities, expenses, daily work time coder, and transportation delayed notifications
+
 # web102 framework
-A small bare minimum web app written in go that serve data from backend to angular front end
+using my web102 golang web framework
 
 ### Backend
 
 * go
-* mongodb 
+* mongodb
 * redis (default cache etc not implemented)
 
 ### Frontend
@@ -16,3 +19,9 @@ A small bare minimum web app written in go that serve data from backend to angul
 * twitter bootstrap
 * reactjs
 * JSXTransformer
+
+
+### JSX usage
+```
+jsx --watch public/js/app public/js/jsx_builds
+```
