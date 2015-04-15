@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
+	"monthlyCoder/modules/config"
 	"monthlyCoder/modules/database"
 )
 
@@ -14,6 +15,7 @@ var (
 func main() {
 	initializeAssets()
 	startRoutes()
+	config.GetOsMachinePrivateIP()
 
 	go database.StartMongoDb()
 
