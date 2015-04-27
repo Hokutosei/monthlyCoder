@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('monthlyCoder', ['ngRoute', 'ngResource', 'react']);
+var app = angular.module('monthlyCoder', ['ngRoute', 'ngResource', 'react', 'ngHandsontable']);
 
 app.config(function($routeProvider, $locationProvider) {
 
